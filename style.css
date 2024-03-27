@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'gillroy';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh; 
+    /* background-color: blueviolet; */
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0); */
+    /* background-color: #999999d8; */
+}
+
+#workingarea {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    /* background-color: #888; */
+    max-width: 1920px;
+    /* border: 1px solid white; */
+}
+#nav {
+    pointer-events: all;
+    width: 100%;
+    padding: 20px 0;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav img {
+    height: 50px;
+    /* mix-blend-mode: difference; */
+}
+#nleft, #nright {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#nav a {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+#hero {
+    width: 100%;
+    /* height: 100px; */
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    /* background: blueviolet; */
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+#heroleft {
+    min-width: 50%;
+    /* height: 100%; */
+    /* background-color: aqua; */
+}
+#heroleft .elem {
+    position: relative;
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#heroleft .elem h1:nth-child(1) {
+    top: 0;
+}
+#heroleft .elem h1 {
+    line-height: 0.9;
+    font-family: 'kajiro';
+    color: #fff;
+    top: 100%;
+    left: 0;
+    font-weight: 100;
+    font-size: 11vw;
+    position: absolute;
+}
+#heroleft button {
+    pointer-events: all;
+    padding: 0.8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: 'kajiro';
+}
+#heroright {
+    width: 18%;
+    /* height: 100%; */
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    /* background-color: green; */
+}
+#heroright p {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+    /* margin-bottom: 50px; */
+}
+#heroright #imagediv {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://cdn.create.vista.com/api/media/small/595657870/stock-photo-impressed-dark-skinned-lady-frizzy-hair-looks-surprisingly-aside-keeps);
+    background-position: top;
+    background-size: cover;
+}
+#heroright p:nth-child(3) {
+    margin-bottom: 60px;
+}
